@@ -1,0 +1,2 @@
+-- File will be used for the video demonstration, it will show the before and after EXPLAIN ANALYZE to show the slow sequential scan baseline,
+-- that then builds the indexes, re-run the same query and prove the Index Scan speedup.

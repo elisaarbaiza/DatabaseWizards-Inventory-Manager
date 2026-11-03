@@ -1,0 +1,3 @@
+-- File will be used for maintaining the logs of interactions that happen after audit_log, 
+--  simulate a store manager editing stock,
+--  simulate a recovery from a mistake using backup/restore
