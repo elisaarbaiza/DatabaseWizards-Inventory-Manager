@@ -28,5 +28,18 @@ BEFORE UPDATE ON store_inventory
 FOR EACH ROW
 EXECUTE FUNCTION updated_at();
 
+create index on employees (employee_id);
+create index on employees (location_id);
+create index on employees (position);
+create index on products (product_id);
+create index on warehouse_inventory (product_id);
+create index on shipments (shipment_id);
+create index on shipments (store_id);
+create index on shipments (order_status);
+create index on store_inventory (product_id);
+create index on returns (return_id);
+
+create index on shipments (order_status) where order_status = 'in progress';
+
 
 commit;
